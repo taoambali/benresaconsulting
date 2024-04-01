@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* line-height: 1.5; */
+            height: 2000px;
+        }
+
+       
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .top-header {
+            /* height:  */
+            width: 100%;
+            color: #fff;
+            background-color: #1d262f;
+            font-size: 12px;
+            /* height:  */
+            /* padding */
+        }
+
+        .top-header .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+        }
+
+        .top-header .top-info {
+            border: 1px solid orange;
+            display: flex;
+            
+        }
+
+        .top-header .top-info div {
+            /* font-size: 16px; */
+            padding-left: 24px;
+        }
+
+        .top-header .top-social {   
+            border: 1px solid green;
+            display: flex;
+            /* margin-right: 24px; */
+        }
+
+        .top-header .top-social div {
+            margin-right: 12px;
+        }
+
+        .top-header .top-social i {
+            font-size: 16px;
+        }
+
+        .top-header .top-social i:hover {
+            color: orange;
+        }
+
+        .homepage .row {
+            margin: 48px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .homepage .homepage-content h1 {
+            font-size: 32px;
+            color: red;
+            margin: 12px 0;
+        }
+
+        .homepage .homepage-content .homepage-text {
+            margin: 12px;
+            line-height: 1.5;
+        }
+
+        .homepage .homepage-content .homepage-content-details p {
+            font-size: 16px;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Top header -->
+<div class="top-header">
+    <div class="container">
+        <div class="top-info">
+            <div><i class="fa-solid fa-square-phone"></i> <span>+234 8027985840, +234 8037985840</span></div>
+            <div><i class="fa-solid fa-envelope"></i> <span>info@benresaconsulting.com</span></div>
+        </div>
+        <div class="top-social">
+            <div><i class="fa-brands fa-square-facebook"></i></div>
+            <div><i class="fa-brands fa-x-twitter"></i></div>
+            <div><i class="fa-brands fa-square-instagram"></i></div>
+        </div>
+    </div>
+</div>
+
+    <!-- Header Section -->
+<header class="header" id="header">
+    <div class="main-header" id="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#"><img src="./assets/images/logo/benresa.png" alt="benresa consulting"></a>
+                </div>
+
+                <!-- Open Menu -->
+                <button type="button" class="open-menu">
+                    <!-- <i class="fas fa-bars"></i> -->
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="menu-overlay"></div>
+
+                <nav class="main-nav"> 
+                    <!-- Close Mmenu -->
+                    <button type="button" class="close-menu">
+                        <!-- <i class="fas fa-times"></i> -->
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <!-- Navigation -->
+                    <ul class="nav">
+                        <li class="nav-menu">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="nav-menu">
+                            <a href="#" >About us</a>
+                        </li>
+
+                        <li class="nav-menu  nav-menu-has-children">
+                            <a href="#" data-toggle="sub-nav-menu">Services <i class="fa-solid fa-chevron-down"></i></a>
+
+                            <ul class="sub-nav-menu">
+                                <li class="nav-menu"><a href="#">Recruitment & Selection</a></li>
+                                <li class="nav-menu"><a href="#">Outsourcing</a></li>
+                                <li class="nav-menu"><a href="#">Learning & Development</a></li>
+                                <li class="nav-menu"><a href="#">Business Advisory</a></li>
+                                <li class="nav-menu"><a href="#">HR Advisory</a></li>
+                                <li class="nav-menu"><a href="#">Workforce Management</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-menu">
+                            <a href="#" >Latest Jobs</a>
+                        </li>
+
+                        <li class="nav-menu">
+                            <a href="#" >Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header Section -->
+
+<section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="assets/images/showcase/showcase1.jpg" alt="" class="image" />
+        <div class="image-data">
+          <!-- <span class="text">Enjoy the finest coffee drinks.</span> -->
+          <h2>
+            Find your dream <br />
+                    job with Benresa consulting
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="assets/images/showcase/showcase2.jpg" alt="" class="image" />
+        <div class="image-data">
+          <!-- <span class="text">We really like what we do.</span> -->
+          <h2>
+            The Easiest way to <br />
+                    get your dream job
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="assets/images/showcase/showcase3.jpg" alt="" class="image" />
+        <div class="image-data">
+          <!-- <span class="text">Making Our coffee with lover.</span> -->
+          <h2>
+            Your number 1 outsourcing <br />
+            job company
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+
+<section id="homepage" class="homepage">
+    <div class="container">
+        <div class="row">
+            <div class="homepage-image">
+                <img src="assets/images/others/homepage1.jpg" alt="">
+            </div>
+            <div class="homepage-content">
+                <h1>We help to get the best job and find a talent</h1>
+                <p class="homepage-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore perspiciatis facilis quae! Aliquam in aliquid eveniet quos eum accusamus quia delectus aut! Nam veniam veritatis modi dolore facilis tenetur a blanditiis delectus cum ducimus.</p>
+                <div class="homepage-content-details">
+                    <p><i class="fa-regular fa-circle-check" style="color: green;"></i> Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                    <p><i class="fa-regular fa-circle-check" style="color: green;"></i> Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                    <p><i class="fa-regular fa-circle-check" style="color: green;"></i> Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <h1><i class="fa-solid fa-square-phone"></i></h1>
+    <h1><i class="fa-solid fa-envelope"></i></h1>
+    <h1><i class="fa-brands fa-square-facebook"></i></h1>
+    <h1><i class="fa-brands fa-x-twitter"></i></h1>
+    <h1><i class="fa-brands fa-square-instagram"></i></h1> -->
+
+<!-- Swiper JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
