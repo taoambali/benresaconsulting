@@ -11,85 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            /* line-height: 1.5; */
-            height: 2000px;
-        }
+       
 
        
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
 
-        .top-header {
-            /* height:  */
-            width: 100%;
-            color: #fff;
-            background-color: #1d262f;
-            font-size: 12px;
-            /* height:  */
-            /* padding */
-        }
 
-        .top-header .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px;
-        }
-
-        .top-header .top-info {
-            border: 1px solid orange;
-            display: flex;
-            
-        }
-
-        .top-header .top-info div {
-            /* font-size: 16px; */
-            padding-left: 24px;
-        }
-
-        .top-header .top-social {   
-            border: 1px solid green;
-            display: flex;
-            /* margin-right: 24px; */
-        }
-
-        .top-header .top-social div {
-            margin-right: 12px;
-        }
-
-        .top-header .top-social i {
-            font-size: 16px;
-        }
-
-        .top-header .top-social i:hover {
-            color: orange;
-        }
+        
 
         .homepage .row {
             margin: 48px 0;
@@ -121,12 +49,12 @@
     <div class="container">
         <div class="top-info">
             <div><i class="fa-solid fa-square-phone"></i> <span>+234 9032752982, +234 8134065485</span></div>
-            <div><i class="fa-solid fa-envelope"></i> <span>info@benresaconsulting.com</span></div>
+            <div><i class="fa-solid fa-envelope"></i> <span>career@benresaconsulting.com</span></div>
         </div>
         <div class="top-social">
-            <div><i class="fa-brands fa-square-facebook"></i></div>
-            <div><i class="fa-brands fa-x-twitter"></i></div>
-            <div><i class="fa-brands fa-square-instagram"></i></div>
+            <a class="social-click" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a class="social-click" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="social-click" href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
     </div>
 </div>
@@ -178,6 +106,9 @@
                             </ul>
                         </li>
 
+                        <li class="nav-menu">
+                            <a href="#" >Learning</a>
+                        </li>
 
                         <li class="nav-menu">
                             <a href="#" >Latest Jobs</a>

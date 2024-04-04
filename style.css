@@ -1,3 +1,4 @@
+/* ==== GENERAL CSS SECTION ==== */
 :root {
     --primary-color: #102d73;
     --primary-color2: #4cc4d3;
@@ -7,7 +8,7 @@
     --dark: #000;
     --light-black: #666;
     --light-white: #ccc;
-    --light-bg: #f6f6f6;
+    --light-bg: #f5f5f5;
 }
 
 *{
@@ -16,6 +17,34 @@
     box-sizing: border-box;
     outline: none;
     border: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1.5; */
+    height: 2000px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* .container {
@@ -48,9 +77,77 @@
     padding: 10px 0 0;
 }
 
+/* ==== TOP HEADER SECTION ==== */
+
+.top-header {
+    width: 100%;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 14px;
+}
+
+.top-header .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 12px;
+}
+
+.top-header .top-info {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-header .top-info div {
+    margin-left: 24px;
+
+}
+
+.top-header .top-social {   
+    /* border: 1px solid green; */
+    display: flex;
+    justify-self: end;
+}
+
+
+.top-header .top-social i {
+    font-size: 16px;
+    color: var(--white);
+    margin: 0 8px;
+    /* border: 1px solid red; */
+}
+
+.top-header .top-social i:hover {
+    color: var(--secondary-color);
+}
+
+/* ==== TOP HEADER RESPONSIVE ==== */
+@media (max-width: 1098px) {
+    .top-header .top-info div {
+        padding-bottom: 6px;
+    }
+}
+
+@media (max-width: 698px) {
+    .top-header .container {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .top-header .top-info {
+        text-align: center;
+        display: block;
+    }
+
+    .top-header .top-social {   
+        justify-self: center;
+        margin-top: 8px;
+    }
+}
+
+/* ==== HEADER SECTION ===== */
 .header {
-    /* background-color: var(--primary-color); */
-    background-color: #f4f4f4;
+    background-color: var(--light-bg);
     padding: 16px 0;
 }
 
@@ -137,13 +234,21 @@
     border: none;
     background: transparent;
     font-size: 1.25rem;
-    color: var(--white);
     cursor: pointer;
     padding: 0.2rem 0.5rem;
     outline: none;
     transition: all 0.3s ease-in-out;
-    border: 2px solid var(--white);
     border-radius: 4px;
+}
+
+.main-header .open-menu {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.main-header .close-menu {
+    color: var(--white);
+    border: 2px solid var(--white);
 }
 
 .main-header .open-menu:hover,
@@ -183,14 +288,14 @@
 
 
 /* ==== Header Responsive ==== */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 998px) {
     .main-header .main-nav {
         position: fixed;
         background: var(--primary-color);
         /* right: 0; */
-        right: -280px;
+        right: -290px;
         visibility: hidden;
-        width: 280px;
+        width: 290px;
         height: 100%;
         overflow-y: auto;
         top: 0;
