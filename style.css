@@ -263,7 +263,7 @@
 
 @media screen and (max-width: 768px) {
     .main-header .logo img {
-        /* width: 260px; */
+        width: 260px;
     }
 
     .header .open-menu {
@@ -273,7 +273,7 @@
 
 @media screen and (max-width: 568px) {
     .main-header .logo img {
-        /* width: 240px; */
+        width: 220px;
     }
 
     .header .open-menu {
@@ -283,7 +283,7 @@
 
 @media screen and (max-width: 468px) {
     .main-header .logo img {
-        /* width: 200px; */
+        width: 200px;
     }
 
     .header .open-menu {
@@ -293,7 +293,7 @@
 
 @media screen and (max-width: 400px) {
     .main-header .logo img {
-        /* width: 184px; */
+        width: 184px;
     }
 
     .header .open-menu {
