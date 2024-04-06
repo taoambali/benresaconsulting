@@ -85,7 +85,7 @@ window.addEventListener("scroll", function () {
 
 });
 
-var swiper = new Swiper(".mySwiper", {
+const newSwiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -99,5 +99,24 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    }
+});
+
+const swiper = new Swiper('.js-testimonials-slider', {
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.js-testimonials-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2
+        }
     }
 });
