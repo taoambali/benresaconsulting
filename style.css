@@ -1695,6 +1695,33 @@ justify-content: center;
 
 
 /* ==== Responsive ==== */
-@media screen and (max-width: 768px) {
-   
+@media screen and (max-width: 968px) {
+    .taxes .taxes_manage {
+        display: block;
+        /* align-items: center; */
+        /* padding: 32px 0; */
+    }
+
+    .taxes .taxes_manage .taxes_content {
+        padding: 32px 0;
+    }
+    
+}
+
+@media screen and (max-width: 868px) {
+    /* .taxes .taxes_manage {
+        display: block; */
+        /* align-items: center; */
+        /* padding: 32px 0; */
+    /* } */
+
+    .taxes .taxtype {
+        /* padding-top: 32px; */
+        /* padding-bottom: 32px; */
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* gap: 40px; */
+        
+        
+    }
 }
