@@ -1602,3 +1602,99 @@ justify-content: center;
         /* color: var(--primary-color); */
     }
 }
+
+
+#taxes {
+    padding: 84px 0;
+}
+
+.taxes .taxes_manage {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.taxes .taxes_manage .taxes_image {
+
+}
+
+.taxes .taxes_manage .taxes_image img {
+    
+}
+
+.taxes .taxes_manage .taxes_content {
+    padding-left: 32px;
+}
+
+.taxes .taxes_manage .taxes_content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.taxes .taxtype {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    
+    
+}
+
+/* .about .about_text {
+    text-align: center;
+    font-size: 2.25rem;
+    padding-bottom: 16px;
+    color: var(--secondary-color);
+} */
+
+.taxes .taxtype .taxtype_container {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.taxes .taxtype .taxtype_container h3 {
+    /* background-color: var(--primary-color2); */
+    background-color: #058ec4;
+    padding: 1rem;
+    color: #eee;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.taxes .taxtype .taxtype_container p,
+.taxes .taxtype .taxtype_container h5, 
+.taxes .taxtype .taxtype_container ul {
+    padding: 1.5rem;
+}
+
+.taxes .taxtype .taxtype_container h5 {
+    padding-bottom: 0;
+}
+
+.taxes .taxtype .taxtype_container p, 
+.taxes .taxtype .taxtype_container h5, 
+.taxes .taxtype .taxtype_container ul li {
+    font-size: 1.05rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.taxes .taxtype .taxtype_container ul li {
+    padding-bottom: 8px;
+}
+
+.taxes .taxtype .taxtype_container ul li i {
+    /* color: var(--primary-color2); */
+    color: #058ec4;
+}
+
+
+
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 768px) {
+   
+}
