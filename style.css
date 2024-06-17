@@ -913,12 +913,19 @@ footer .sci li a .fa-brands {
     }
 }
 
+@media screen and (max-width: 350px) {
+    .management h3 {
+
+        font-size: 1.1rem;
+    }
+}
+
 
 /* === Mini-Showcase ==== */
 .mini-showcase {
-    background-image: url('./assets/images/image777.jpg');
+    background-image: url('./assets/images/benresa-image.jpeg');
     height: 28vh;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--primary-color2);
@@ -1177,16 +1184,17 @@ footer .sci li a .fa-brands {
 
 .home_about .home_about_image {
     overflow: hidden;
-    margin-right: 32px;
+    margin-right: 40px;
     /* height: 320px; */
-    /* flex: 2; */
+    flex: 1;
     /* width: 400px; */
+
 }
 
 .home_about .home_about_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;  */
+    /* height: 100%; */
+    /* object-fit: cover;  */
     transition: all 0.3s ease-in-out;
 }
 
@@ -1195,18 +1203,18 @@ footer .sci li a .fa-brands {
 }
 
 .home_about .home_about_content {
-    /* flex: 1; */
-    align-self: center;
+    flex: 1;
+    /* align-self: center; */
 }
 
 
-.home_about .home_about_content .home_about_heading {
+/* .home_about .home_about_content .home_about_heading {
     font-size: 28px;
     font-weight: 600;
     color: #102d73;
     padding-bottom: 16px;
     text-transform: capitalize;
-}
+} */
 
 .home_about .home_about_content .home_about_text_container {
     padding-bottom: 18px;
@@ -1344,7 +1352,7 @@ grid-template-columns: 1fr;
 .ourmission {
 /* margin-top: 48px;
 margin-bottom: 48px; */
-background-image: url('assets/images/image444.jpg');
+background-image: url('assets/images/hompage-1.jpeg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -1404,7 +1412,7 @@ font-size: 1.35rem;
 .ourstrength {
 /* margin-top: 48px;
 margin-bottom: 48px; */
-background-image: url('assets/images/image777.jpg');
+background-image: url('assets/images/homepage-2.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
